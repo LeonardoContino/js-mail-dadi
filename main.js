@@ -74,3 +74,10 @@ L'esito del controllo deve essere stampato in pagina
 const email = document.getElementById("email");
 const textemail = document.getElementById("textemail");
 // console.log(textemail, email);
+
+const emails = [
+  "leonardocontino@gmail.com",
+  "lello@gmail.com",
+  "conti@gmail.com",
+];
+console.log(emails);
