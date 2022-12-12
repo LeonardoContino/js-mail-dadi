@@ -12,4 +12,11 @@ Stampiamo in pagina i due tiri e il risultato
 4.stampare con inner.html
 */
 const dado = document.getElementById("dado");
-console.log(dado);
+// console.log(dado);
+
+let random = Math.random();
+// console.log(random);
+const max = 6;
+
+const cpu = Math.floor(random * max) + 1;
+console.log("numero cpu = " + cpu);
