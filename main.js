@@ -30,8 +30,9 @@ if (cpu > user) {
   text = "il vincitore è cpu";
   console.log(text);
 } else if (user > cpu) {
-  text = "il vincitore è cpu";
+  text = "il vincitore è user";
   console.log(text);
-} else( user = cpu) {
+} else if (user == cpu) {
   text = "pareggio";
+  console.log(text);
 }
