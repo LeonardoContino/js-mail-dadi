@@ -70,3 +70,7 @@ L'esito del controllo deve essere stampato in pagina
 
 
 */
+
+const email = document.getElementById("email");
+const textemail = document.getElementById("textemail");
+// console.log(textemail, email);
