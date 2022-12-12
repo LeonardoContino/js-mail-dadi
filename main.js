@@ -72,7 +72,7 @@ L'esito del controllo deve essere stampato in pagina
 */
 
 const input = document.getElementById("input");
-let textemail = document.getElementById("textemail");
+
 const button = document.getElementById("btn");
 // console.log(textemail, input);
 
@@ -84,10 +84,12 @@ const emails = [
 console.log(emails);
 
 btn.addEventListener("click", function () {
+  let textemail = document.getElementById("textemail");
+
   if (!(input === emails)) {
     textemail = "l'email non corrisponde";
     console.log(textemail);
-  } else {
+  } else if (input === emails) {
     textemail = "benvenuto";
     console.log(textemail);
   }
