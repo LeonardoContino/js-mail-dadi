@@ -11,8 +11,11 @@ Stampiamo in pagina i due tiri e il risultato
 3. validare con if
 4.stampare con inner.html
 */
-const dado = document.getElementById("dado");
+let result = document.getElementById("result");
 let text = "";
+let cpuresult = document.getElementById("cpuresult");
+let userresult = document.getElementById("userresult");
+
 // console.log(dado);
 
 let randomcpu = Math.random();
@@ -20,10 +23,10 @@ let randomuser = Math.random();
 // console.log(random);
 const max = 6;
 
-const cpu = Math.floor(randomcpu * max) + 1;
+let cpu = Math.floor(randomcpu * max) + 1;
 console.log("numero cpu = " + cpu);
 
-const user = Math.floor(randomuser * max) + 1;
+let user = Math.floor(randomuser * max) + 1;
 console.log("numero user = " + user);
 
 if (cpu > user) {
@@ -36,3 +39,6 @@ if (cpu > user) {
   text = "pareggio";
   console.log(text);
 }
+cpuresult.innerHTML = "il numero della cpu è = " + cpu;
+userresult.innerHTML = "il numero dell' user è = " + user;
+result.innerHTML = text;
