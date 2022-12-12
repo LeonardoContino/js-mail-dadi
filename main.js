@@ -24,21 +24,36 @@ let randomuser = Math.random();
 const max = 6;
 
 let cpu = Math.floor(randomcpu * max) + 1;
-console.log("numero cpu = " + cpu);
+// console.log("numero cpu = " + cpu);
 
 let user = Math.floor(randomuser * max) + 1;
-console.log("numero user = " + user);
+// console.log("numero user = " + user);
 
 if (cpu > user) {
   text = "il vincitore è cpu";
-  console.log(text);
+  //   console.log(text);
 } else if (user > cpu) {
   text = "il vincitore è user";
-  console.log(text);
+  //   console.log(text);
 } else if (user == cpu) {
   text = "pareggio";
-  console.log(text);
+  //   console.log(text);
 }
 cpuresult.innerHTML = "il numero della cpu è = " + cpu;
 userresult.innerHTML = "il numero dell' user è = " + user;
 result.innerHTML = text;
+
+/*
+ESERCIZIO 2 - Finta Login
+Inventa una lista di email autorizzate
+Chiedi all’utente la sua email, con un piccolo form.
+controlla che sia nella lista di chi può accedere,
+stampa un messaggio appropriato sull’esito del controllo.
+Prima di partire a scrivere codice poniamoci qualche domanda:
+Che ci sia un array da qualche parte?
+Cosa devo controllare esattamente?
+:avviso: NOTE:
+è vietato utilizzare il metodo includes()
+La mail dell'utente va raccolta tramite input  e con l'aiuto di un button , non con un prompt.
+L'esito del controllo deve essere stampato in pagina
+ */
