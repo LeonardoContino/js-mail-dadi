@@ -11,3 +11,5 @@ Stampiamo in pagina i due tiri e il risultato
 3. validare con if
 4.stampare con inner.html
 */
+const dado = document.getElementById("dado");
+console.log(dado);
