@@ -12,6 +12,7 @@ Stampiamo in pagina i due tiri e il risultato
 4.stampare con inner.html
 */
 const dado = document.getElementById("dado");
+let text = "";
 // console.log(dado);
 
 let randomcpu = Math.random();
@@ -24,3 +25,13 @@ console.log("numero cpu = " + cpu);
 
 const user = Math.floor(randomuser * max) + 1;
 console.log("numero user = " + user);
+
+if (cpu > user) {
+  text = "il vincitore è cpu";
+  console.log(text);
+} else if (user > cpu) {
+  text = "il vincitore è cpu";
+  console.log(text);
+} else( user = cpu) {
+  text = "pareggio";
+}
