@@ -76,15 +76,14 @@ const input = document.getElementById("input");
 const button = document.getElementById("btn");
 // console.log(textemail, input);
 
-const emails = [
-  "leonardocontino@gmail.com",
-  "lello@gmail.com",
-  "conti@gmail.com",
-];
-console.log(emails);
-
 btn.addEventListener("click", function () {
   let textemail = document.getElementById("textemail");
+  const emails = [
+    "leonardocontino@gmail.com",
+    "lello@gmail.com",
+    "conti@gmail.com",
+  ];
+  console.log(emails);
 
   if (!(input === emails)) {
     textemail = "l'email non corrisponde";
