@@ -71,9 +71,10 @@ L'esito del controllo deve essere stampato in pagina
 
 */
 
-const email = document.getElementById("email");
-const textemail = document.getElementById("textemail");
-// console.log(textemail, email);
+const input = document.getElementById("input");
+let textemail = document.getElementById("textemail");
+const button = document.getElementById("btn");
+// console.log(textemail, input);
 
 const emails = [
   "leonardocontino@gmail.com",
@@ -81,3 +82,13 @@ const emails = [
   "conti@gmail.com",
 ];
 console.log(emails);
+
+btn.addEventListener("click", function () {
+  if (!(input === emails)) {
+    textemail = "l'email non corrisponde";
+    console.log(textemail);
+  } else {
+    textemail = "benvenuto";
+    console.log(textemail);
+  }
+});
