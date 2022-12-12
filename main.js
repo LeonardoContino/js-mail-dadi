@@ -84,14 +84,13 @@ btn.addEventListener("click", function () {
     "lello@gmail.com",
     "conti@gmail.com",
   ];
-
-  console.log(emails);
-
-  if (!(input.value === emails)) {
-    textemail = "l'email non corrisponde";
-    console.log(textemail);
-  } else {
-    textemail = "benvenuto";
-    console.log(textemail);
-  }
+  //   console.log(emails);
+  for (let i = 0; i < emails.length; i++)
+    if (input.value !== i) {
+      textemail = "l'email non corrisponde";
+      console.log(textemail);
+    } else {
+      textemail = "benvenuto";
+      console.log(textemail);
+    }
 });
