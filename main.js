@@ -57,3 +57,16 @@ Cosa devo controllare esattamente?
 La mail dell'utente va raccolta tramite input  e con l'aiuto di un button , non con un prompt.
 L'esito del controllo deve essere stampato in pagina
  */
+
+/*
+1.crerare elementi nel dom un form e una p dove ci sarà
+ la scritta se l'utente può entrare o meno
+2. mettere elemnti del dom sullo script
+3.inventa una lista di email con array
+4. crea un form con input
+5. creare un bottone e fare un add event listener
+6. controlla se può accedere
+7.stampa il messaggio
+
+
+*/
