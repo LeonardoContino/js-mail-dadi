@@ -76,7 +76,7 @@ const button = document.getElementById("btn");
 
 btn.addEventListener("click", function () {
   let input = document.getElementById("input");
-  console.log(input.value);
+  //   console.log(input.value);
 
   let textemail = document.getElementById("textemail");
   const emails = [
@@ -84,14 +84,18 @@ btn.addEventListener("click", function () {
     "lello@gmail.com",
     "conti@gmail.com",
   ];
+  let trovato = false;
   //   console.log(emails);
   for (let i = 0; i < emails.length; i++) {
-    if (input.value !== i) {
-      textemail = "l'email non corrisponde";
-      console.log(textemail);
-    } else {
-      textemail = "benvenuto";
-      console.log(textemail);
+    console.log(emails[i]);
+
+    if (input.value === emails[i]) {
+      trovato = true;
     }
+  }
+  if (trovato === true) {
+    textemail.innerHTML = "benvenuto";
+  } else {
+    textemail.innerHTML = "email non corrsiponde";
   }
 });
