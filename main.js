@@ -14,9 +14,13 @@ Stampiamo in pagina i due tiri e il risultato
 const dado = document.getElementById("dado");
 // console.log(dado);
 
-let random = Math.random();
+let randomcpu = Math.random();
+let randomuser = Math.random();
 // console.log(random);
 const max = 6;
 
-const cpu = Math.floor(random * max) + 1;
+const cpu = Math.floor(randomcpu * max) + 1;
 console.log("numero cpu = " + cpu);
+
+const user = Math.floor(randomuser * max) + 1;
+console.log("numero user = " + user);
